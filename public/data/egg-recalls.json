@@ -1,0 +1,62 @@
+{
+  "endpoints" : [ {
+    "name" : "USDA Shell Egg Recalls",
+    "path" : "/resource/egg-recalls",
+    "methods" : [ {
+      "MethodName" : "Query",
+      "Synopsis" : "Retrieve details about shell-egg recalls",
+      "HTTPMethod" : "GET",
+      "URI" : "",
+      "RequiresOAuth" : "N",
+      "parameters" : [ {
+        "Name" : "recall_id",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "integer",
+        "Description" : "Earthquake information source"
+      }, {
+        "Name" : "category",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "Identifier"
+      }, {
+        "Name" : "brand_name",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "Version"
+      }, {
+        "Name" : "description",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "When the earthquake occurred"
+      }, {
+        "Name" : "recalling_firm",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "pack_size",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "codes",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "strings",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "label",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "url",
+        "Description" : "Strength of the earthquake"
+      } ]
+    } ]
+  } ]
+}
