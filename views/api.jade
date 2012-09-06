@@ -1,4 +1,6 @@
-h1=apiInfo.name 
+pre=req.params.keys
+
+h1=apiInfo.name
 - if (session.authed && apiInfo.oauth && apiInfo.oauth.type =='three-legged')
     - var authed ='authed'
 - else
@@ -7,7 +9,7 @@ h1=apiInfo.name
 
 form#credentials
     input(type='hidden', name='apiName', value=apiName)
-    - if (apiInfo.auth) 
+    - if (apiInfo.auth)
         section(class='credentials ' + authed)
          - if (authed && apiInfo.oauth)
              span Authenticated with OAuth
@@ -102,7 +104,7 @@ ul
                                                       - if (parameter.Type =='enumerated')
                                                           select(name='params[' + parameter.Name + ']', placeholder=className)
                                                             - if (parameter.Default =='')
-                                                                option(value='') 
+                                                                option(value='')
                                                             - each choice in parameter.EnumeratedList
                                                                 - if (parameter.Default ==choice)
                                                                         option(value=choice, selected=true) #{choice}
@@ -111,14 +113,14 @@ ul
                                                       - else if (parameter.Type =='boolean')
                                                            select(name='params[' + parameter.Name + ']', placeholder=className)
                                                                 - if (parameter.Default =='')
-                                                                        option(value='') 
+                                                                        option(value='')
                                                                 - each choice in [apiInfo.booleanTrueVal,apiInfo.booleanFalseVal]
                                                                    - if (parameter.Default ==choice)
                                                                            option(value=choice, selected=true) #{choice}
                                                                    - else
                                                                            option(value=choice) #{choice}
                                                       - else
-                                                          input(name='params[' + parameter.Name + ']', value=parameter.Default, placeholder=className)
+                                                          input(name='params[' + parameter.Name + ']', value=(parameter.Default || req.param(parameter.Name)), placeholder=className)
                                                   td.type=parameter.Type
                                                   td.description
                                                       p=parameter.Description || 'No description'

@@ -256,8 +256,7 @@
                     .text(response.call);
             }
 
-            if (response.headers) {
-                $('pre.headers', resultContainer)
+            if (response.headers) { $('pre.headers', resultContainer)
                     .text(formatJSON(response.headers));
             }
 
@@ -288,4 +287,5 @@
         })
     })
 
+    $('ul.inline li.method form').submit();
 })();

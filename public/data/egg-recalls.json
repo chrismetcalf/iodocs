@@ -48,13 +48,49 @@
         "Name" : "codes",
         "Required" : "N",
         "Default" : "",
-        "Type" : "strings",
+        "Type" : "string",
         "Description" : "Strength of the earthquake"
       }, {
         "Name" : "label",
         "Required" : "N",
         "Default" : "",
         "Type" : "url",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "$select",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "soql",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "$where",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "soql",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "$group",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "soql",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "$limit",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "integer",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "$offset",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "integer",
+        "Description" : "Strength of the earthquake"
+      }, {
+        "Name" : "$q",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
         "Description" : "Strength of the earthquake"
       } ]
     } ]

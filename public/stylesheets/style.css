@@ -439,7 +439,7 @@ li {
 }
 
 .methods {
-  display: none;
+  /* display: none; */
 }
 
 .method {
@@ -470,7 +470,7 @@ li {
 }
 
 .method div.headers .fields {
-  display: none;
+  /* display: none; */
   padding: 0 15px;
   margin-bottom: 15px;
 }
@@ -557,7 +557,7 @@ li {
 .method form {
   clear: both;
   padding: 15px;
-  display: none;
+  /* display: none; */
 }
 
 .method form a.clear-results {
