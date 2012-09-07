@@ -204,7 +204,7 @@
                 .insertAfter($('input[type=submit]', self));
 
             // Call that was made, add pre elements
-            resultContainer.append($(document.createElement('h4')).text('Call'));
+            resultContainer.append($(document.createElement('h4')).text('Request'));
             resultContainer.append($(document.createElement('pre')).addClass('call'));
 
             // Header
@@ -253,7 +253,7 @@
 
             if (response.call) {
                 $('pre.call', resultContainer)
-                    .text(response.call);
+                    .text("https://" + response.call);
             }
 
             if (response.headers) { $('pre.headers', resultContainer)

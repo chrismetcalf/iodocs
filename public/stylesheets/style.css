@@ -278,8 +278,8 @@ html {
 }
 
 body {
-  width: 960px;
-  margin: 15px auto;
+  /* width: 960px; */
+  /* margin: 15px auto; */
   padding-bottom: 20px;
 }
 
@@ -459,6 +459,23 @@ li {
       }*/
 }
 
+.inline .method {
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  padding-top: 0;
+}
+
+.inline .method form {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 .method div.headers {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -623,6 +640,20 @@ li {
 
 .method pre.response {
   max-height: 500px;
+}
+
+.inline .method pre.headers {
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.inline .method pre.response {
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.inline .method .experiment {
+  margin-left: 20px;
 }
 
 .method pre.prettyprint {
@@ -810,4 +841,10 @@ dd {
   h2, h3 {
     page-break-after: avoid;
   }
+}
+
+/* Styling tweaks */
+
+.inline .str {
+  color: #253A60;
 }
