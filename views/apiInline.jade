@@ -27,4 +27,4 @@ ul.inline
                   input(type='hidden', name='params[' + parameter.Name + ']', value=field_value)
 
           .experiment
-            a(href=req.path.replace(/inline\//, ''), target='_blank') Experiment with this request &raquo;
+            a(href=req.url.replace(/inline\//, 'explore/')) Experiment with this request &raquo;

@@ -9,89 +9,83 @@
       "URI" : "",
       "RequiresOAuth" : "N",
       "parameters" : [ {
-        "Name" : "recall_id",
-        "Required" : "N",
-        "Default" : "",
-        "Type" : "integer",
-        "Description" : "Earthquake information source"
-      }, {
         "Name" : "category",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "Identifier"
+        "Description" : "The type of egg product."
       }, {
         "Name" : "brand_name",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "Version"
+        "Description" : "The brand name of the packaged product."
       }, {
         "Name" : "description",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "When the earthquake occurred"
+        "Description" : "A description of the product recalled."
       }, {
         "Name" : "recalling_firm",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "Strength of the earthquake"
+        "Description" : "The company that issued the recall."
       }, {
         "Name" : "pack_size",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "Strength of the earthquake"
+        "Description" : "The size of the package recalled."
       }, {
         "Name" : "codes",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "Strength of the earthquake"
+        "Description" : "Identifying details about the product recalled."
       }, {
         "Name" : "label",
         "Required" : "N",
         "Default" : "",
         "Type" : "url",
-        "Description" : "Strength of the earthquake"
+        "Description" : "A link to an image of the label."
       }, {
         "Name" : "$select",
         "Required" : "N",
         "Default" : "",
         "Type" : "soql",
-        "Description" : "Strength of the earthquake"
+        "Description" : "The SELECT portion of a SoQL query."
       }, {
         "Name" : "$where",
         "Required" : "N",
         "Default" : "",
         "Type" : "soql",
-        "Description" : "Strength of the earthquake"
+        "Description" : "The WHERE portion of a SoQL query."
       }, {
         "Name" : "$group",
         "Required" : "N",
         "Default" : "",
         "Type" : "soql",
-        "Description" : "Strength of the earthquake"
+        "Description" : "The GROUP BY portion of a SoQL query."
       }, {
         "Name" : "$limit",
         "Required" : "N",
         "Default" : "",
         "Type" : "integer",
-        "Description" : "Strength of the earthquake"
+        "Description" : "Limit the results to a specified number. The maximum that will be returned at any time is 500 records."
       }, {
         "Name" : "$offset",
         "Required" : "N",
         "Default" : "",
         "Type" : "integer",
-        "Description" : "Strength of the earthquake"
+        "Description" : "Start the results after a given offset. Used for paging."
       }, {
         "Name" : "$q",
         "Required" : "N",
         "Default" : "",
         "Type" : "string",
-        "Description" : "Strength of the earthquake"
+        "Description" : "Perform a full-text search in the data."
       } ]
     } ]
   } ]

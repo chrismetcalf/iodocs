@@ -1,10 +1,9 @@
 {
-  "egg-recalls": {
+  "egg-recalls" : {
     "name": "USDA Shell Egg Recalls",
     "protocol": "https",
     "baseURL": "fda.demo.socrata.com",
     "publicPath": "/resource/egg-recalls",
-    "auth": "key",
     "keyParam" : "app_token"
   }
 }

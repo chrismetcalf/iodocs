@@ -3,10 +3,12 @@ q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, f
 th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+#experiment {
+  padding: 20px;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -385,7 +387,6 @@ li {
 
 .endpoint {
   margin: 0;
-  background-color: #f9f9f9;
   border-bottom: 1px solid #eee;
   overflow: hidden;
   *zoom: 1;
@@ -845,6 +846,6 @@ dd {
 
 /* Styling tweaks */
 
-.inline .str {
+.str {
   color: #253A60;
 }

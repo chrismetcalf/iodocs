@@ -696,6 +696,13 @@ app.get('/inline/:api([^\.]+)', function(req, res) {
   });
 });
 
+// Explore an API request inline
+app.get('/explore/:api([^\.]+)', function(req, res) {
+  res.render('apiInlineExplore', {
+    req: req
+  });
+});
+
 // API shortname, all lowercase
 app.get('/:api([^\.]+)', function(req, res) {
   res.render('api', {
