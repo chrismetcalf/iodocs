@@ -11,7 +11,7 @@ th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgr
   padding: 20px;
 }
 
-#explore {
+#explore, #try-inline {
   width: 750px;
 }
 
