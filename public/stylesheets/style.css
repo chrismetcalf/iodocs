@@ -11,6 +11,10 @@ th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgr
   padding: 20px;
 }
 
+#explore {
+  width: 750px;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
