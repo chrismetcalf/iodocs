@@ -45,6 +45,12 @@
         "Type" : "string",
         "Description" : "Identifying details about the product recalled."
       }, {
+        "Name" : "upc_code",
+        "Required" : "N",
+        "Default" : "",
+        "Type" : "string",
+        "Description" : "The UPC code from the product's packaging."
+      }, {
         "Name" : "label",
         "Required" : "N",
         "Default" : "",
